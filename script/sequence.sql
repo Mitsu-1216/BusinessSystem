@@ -6,6 +6,9 @@ CREATE SEQUENCE CUSTOMER_ID_SEQ
     NO CYCLE
 ;
 
+--シーケンス取得
+SELECT nextval('customer_id_seq');
+
 --シーケンスリセット
 --6の次からスタート
 SELECT SETVAL ('customer_id_seq', 6, true);
